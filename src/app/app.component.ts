@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { IphoneFrameComponent } from './iphone-frame/iphone-frame.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [IphoneFrameComponent],
+   template: `<app-iphone-frame />`
+ 
 })
 export class AppComponent {
   title = 'iphone-frame-app';
