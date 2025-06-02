@@ -59,7 +59,7 @@ import { filter } from 'rxjs';
 })
 export class IphoneFrameComponent {
   isMobile = false;
-   targetLink = 'https://akrem-ekfz.github.io/SHC/'; // Replace this
+   targetLink = 'https://akrem-ekfz.github.io/SHC/'; 
   sanitizedUrl: SafeResourceUrl;
   isBrowser: boolean;
   currentTime: string = '';
@@ -73,13 +73,7 @@ updateTime() {
 }
 
 
-  // constructor(
-  //   private sanitizer: DomSanitizer,
-  //   @Inject(PLATFORM_ID) private platformId: Object
-  // ) {
-  //   this.isBrowser = isPlatformBrowser(this.platformId);
-  //   this.sanitizedUrl = this.sanitizeUrl(this.targetLink);
-  // }
+
   constructor(
     private sanitizer: DomSanitizer,
     private route: ActivatedRoute,
